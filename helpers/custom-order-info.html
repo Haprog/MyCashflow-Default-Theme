@@ -1,0 +1,10 @@
+<dl class="OrderInfo">
+	{OrderDate(before:'<dt class="OrderDate">{%Date}</dt><dd class="OrderDate">',after:'</dd>')}
+	{OrderNumber(before:'<dt class="OrderNumber">{%Ordernumber}</dt><dd class="OrderNumber">',after:'</dd>')}
+	{OrderCustomerNumber(before:'<dt class="OrderCustomerNumber">{%CustomerNumber}</dt><dd class="OrderCustomerNumber">',after:'</dd>')}
+	<dt class="OrderPaymentReference">{%PaymentReference}</dt><dd class="OrderPaymentReference">{%StaticOrderPaymentReference}</dd>
+	{OrderPaymentMethod(before:'<dt class="OrderPaymentMethod">{%CheckoutStagePayment}</dt><dd class="OrderPaymentMethod">',after:'</dd>')}
+	{OrderShippingMethod(before:'<dt class="OrderShippingMethod">{%CheckoutShipping}</dt><dd class="OrderShippingMethod">',after:'</dd>')}
+	{OrderTrackingCode(before:'<dt class="OrderTrackingCode">{%TrackingCode}</dt><dd class="OrderTrackingCode">',after:'</dd>')}
+	{OrderComments(before:'<dt class="OrderComments">{%CheckoutOrderComments}</dt><dd class="OrderComments">',after:'</dd>')}
+</dl>
