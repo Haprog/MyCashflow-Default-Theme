@@ -47,5 +47,12 @@
 		"{ThemeUrl}/js/mcf.responsive.js"
 	]);
 
+	var StaticOrderPaymentReference = '{%StaticOrderPaymentReference}';
+	$(function(){
+		if (StaticOrderPaymentReference.length >= 2) {
+			$('.AccountPage td.OrderPaymentReference').text(StaticOrderPaymentReference);
+		}
+	});
+
 //]]>
 </script>
