@@ -27,10 +27,9 @@
 			before: '<strong>{%CustomerNumber}</strong><br /><span style="margin-left: 25px">',
 			after: '</span><br />'
 		)}
-		{OrderPaymentReference(
-			before: '<strong>{%PaymentReference}</strong><br /><span style="margin-left: 25px">',
-			after: '</span><br />'
-		)}
+		<strong>{%PaymentReference}</strong><br /><span style="margin-left: 25px">
+			{%StaticOrderPaymentReference}
+		</span><br />
 		{OrderOpenTotal(
 			before: '<strong>{%OrderOpenTotal}</strong><br /><span style="margin-left: 25px">',
 			after: '</span><br />'
